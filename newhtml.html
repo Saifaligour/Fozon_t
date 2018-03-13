@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Fozontmain.css">   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    </head>
+    <body>
+
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Mynavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="sdiv navbar-brand">
+
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Clients</a>
+                            <a href="#">Contact</a>
+                        </div>
+
+                        <span style="cursor:pointer;   " onclick="openNav()" class="glyphicon glyphicon-home" ></span>
+
+                    </div>
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                       <!--dropdown manue-->
+                    <div class="dropdown navbar-left dp">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Dropdown header 1</li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Dropdown header 2</li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="Mynavbar">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a style="cursor:pointer" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a style="cursor:pointer"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                    <div class="input-group searchbar">
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Search">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!--poup window start hear --->
+          <!--sign up-->
+<div class="modal fade form-group-lg" id="exampleModal2" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content c2">
+        <div class="modal-header ">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel2">Sign in</h4>
+        </div>
+        <div class="modal-body">  
+  <form >
+    <div class="form-group ">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="abcd@gmail.com" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="*********" name="pwd">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Phone no:</label>
+      <input type="text" class="form-control" id="phn" placeholder="+919634140040" name="phoneno" oninput="this.value = this.value.replace(/[^a-z]/,'');">
+    </div>
+    <div class="form-group">
+      <label for="pwd">OTP:</label>
+      <input type="text" class="form-control" id="otp" placeholder="2341" name="otp">
+    </div>
+      
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="button" class="btn  btn-primary btn-group-justified">Submit</button>
+  </form>
+</div>  
+       
+     <h3 class="lgn">Crate Using</h3></div>
+    </div>
+  </div>
+
+<!--login model-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content c1">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span style="font-size:40px; " aria-hidden="true">&times;</span></button>
+          <div class="loginbox">
+              
+              <h3 class="lgn">Login</h3>
+              <form>
+
+                  <input class="inpt"  type="text" placeholder="Eneter User Name">
+
+                  <input class="inpt" type="password" placeholder="Enter Password">
+                  <input type="submit" name="submit" value="Login">
+                  <a href="#">Forget your Password</a>
+
+              </form>
+          </div>
+      </div>
+    </div>
+   </div> 
+   
+ 
+
+
+
+
+
+
+
+
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "230px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <script src="formvalidation.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

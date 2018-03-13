@@ -1,0 +1,133 @@
+ body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top:51px;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: black;
+    
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.glyphicon-search{
+                padding-left:8px; 
+                padding-right:4px;
+}
+
+.searchbar{
+  margin:8px 250px 3px 500px 
+    }  
+            
+ .dp{
+     padding:8px 20px 10px 40px
+      }
+      /* login page styling*/
+        
+                .c1{
+                    width:400px;
+                height:520px;
+                background-color:white;
+                color: black;
+                top: 20%;
+                left:40%;
+                margin-bottom:40%;
+               
+                position: absolute;
+                box-sizing:border-box; 
+                }
+                .c2{
+                    width:500px;
+                    height:520px;
+                    color: black;
+                    margin-bottom:40%;
+               
+                position: absolute;
+                box-sizing:border-box; 
+                }
+                 .inpt{
+                    border: none;
+                    border-bottom: 1px solid black;
+                    outline: none;
+                    height: 40px;
+                    color:black;
+                    font-size:16px; 
+                        
+                }
+                .loginbox input[type="submit"]{
+                    border: none;
+                    outline: none;
+                    height: 40px;
+                    color:white;
+                    background-color: #007bb5;
+                    font-size:18px;
+                    border-radius:2px; 
+                }
+                .loginbox input{
+                    margin-bottom:50px;
+                    width: 100%;
+                }
+                .loginbox {
+               
+                width:340px;
+                height:auto;
+                background-color:white;
+                color: black;
+                padding-top:40px; 
+                box-sizing:border-box;
+                padding-left:60px;  
+            }
+             .loginbox input[type="submit"]:hover
+                {
+                cursor: pointer;
+                background: #245580;
+                color: #000;
+                }
+                .loginbox a {
+                    font-size:20px;
+                    line-height: 20px;
+                    text-decoration:none;
+                    color: black;
+                    
+                }
+                .loginbox a:hover{
+                    color: #01b1d7; 
+                }
+                 .lgn{
+                margin:0;
+                padding:0 0 20px;
+                text-align: center;
+                font-size: 22px;}
+                

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          
+        </style>
+    
+    </head>
+    <body>
+        <div class="loginbox">
+            <h3>Login</h3>
+            <form name="frm">
+               
+                <input type="text" name="nm" placeholder="Eneter User Name">
+                <br>             
+                <input type="text" name="ph" placeholder="Enter Password">
+                
+                <br>
+                <input type="submit" onclick="return valid()" name="submit" value="Login">
+                <br>
+                <a href="#">Forgate your Password</a>
+               <br>
+               <br>
+               <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+            </form>
+        </div>
+        <script>
+        function valid()
+        {
+            if(frm.nm.value=="")
+            {
+                alert('invalid');
+                frm.nm.focus();
+                return false;
+            }
+            if  ((frm.nm.value.lenght)<=10)
+           { alert('less than 10');
+            return false;
+        }
+           if(isNaN(frm.nm.value)){
+             return false;
+           }
+           
+                alert("No valid");
+                return true;
+            }
+        }
+        </script>
+    </body>
+</html>
